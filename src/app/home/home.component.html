@@ -12,7 +12,7 @@
     </p>
 </div>
 
-<div class="play-container" [class.active]="clickCounter > 5">
+<div class="play-container" [ngClass]="setClass()">
     <ng-template [ngIf]="clickCounter > 5" [ngIfElse]="none">
         <p>The click counter is greater than 5</p>
     </ng-template>
